@@ -1,14 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Bisection from "./Component1/RootOfEquation/Bisection";
-// import "@testing-library/jest-dom";
-// import userEvent from "@testing-library/user-event";
 
 describe("Bisection", () => {
   test("test screen", () => {
     render(<Bisection />);
-    // const linkElement = screen.getByText(/Bisection Methods/i);
-    // expect(linkElement).toBeInTheDocument();
 
     // Input XL
     const xlInput = screen.getByTestId("XL");
